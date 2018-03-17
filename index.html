@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Get On The Train!</title>
+    <title>Liquor Lookup</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,7 +15,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
@@ -28,16 +31,40 @@
 
   <body>
 
-
-
-
-
-
+    
+    
+    <div class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
+      <div class="page">
+        <div class="grid">
+          <div class="grid-item" ng-repeat="item in boxes">
+            <box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
+          </div>
+        </div>
+      </div>
+      <div class="fullscreen-background top-up" ng-show="selected.length" ng-style="{'background-image': 'url(' + selected[0].item.image + ')'}"></div>
+      <div class="scroller" ng-show="selected.length">
+        <a class="close-button" ng-click="clearSelection()">
+          <i class="material-icons">close</i>
+        </a>
+        <h1>Liquor Lookup</h1>
+        <div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
+          <img ng-src="{{item.item.image}}" alt="" />
+          <div class="content">
+            <h2>Avion</h2>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
 
     <!-- JavaScript -->
-    <script src="assets/javascript/javascript.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-
+   
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script src="assets/app.js"></script>
   </body>
 
 </html>
