@@ -1,67 +1,179 @@
 
-<!DOCTYPE html>
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!--Import materialize.css-->
+        
+        <link rel="stylesheet" href="assets/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src='https://code.jquery.com/jquery.js'></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
+        
+        
+       
+    
+          <!--Let browser know website is optimized for mobile-->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </head>
+    
+        <body>
+        
+                <div class="container">
+                    <!--nav bar-->
+                  <nav>
+                        <div class="nav-wrapper">
+                          <a href="index.html" class="brand-logo">
+                              <img class = "brandImage" src="assets/images/logo.jpg">
+                          </a>
+                          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                          <ul class="right hide-on-med-and-down">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a></li>
+                           
+                          </ul>
+                          <ul class="side-nav" id="mobile-demo">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a></li>
+                          </ul>
+                        </div>
+                  </nav>
 
-<html lang="en-us">
+                  <!-- text -->
+                  <h3>Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
+                    to you.</h3>
+                  <h4>Enjoy!</h4>
 
-  <head>
+                  <!-- Masonry blocks for content-->
 
-    <meta charset="UTF-8">
+                    <div class = "blocks" id="ocho">
+                        <div class="card">
+                            <div class="card-image">
+                              <a href="ocho.html">
+                              <img src="https://image.ibb.co/gPKyhx/ocho.jpg">
+                              <span class="card-title" class= "center-align">Ocho Tequila</span>
+                              </a>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class = "blocks" id ="patron">
+                        <div class="card">
+                            <div class="card-image">
+                              <a href="patron.html">
+                              <img src='https://image.ibb.co/cGmThx/Patron.jpg'>
+                              <span class="card-title" class= "center-align">Patron Tequila</span>
+                              </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class = "blocks" id ="herradura">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="Herradura.html">
+                            <img src='https://image.ibb.co/hk4s9c/Herradura.jpg'>
+                            <span class="card-title" class= "center-align">Herradura Tequila</span>
+                            </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class = "blocks" id="dulceVida">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="dulceVida.html">
+                            <img src='https://image.ibb.co/njfX9c/Dulce_Vida.jpg'>
+                            <span class="card-title" class= "center-align">Dulce Vida Tequila</span>
+                            </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class = "blocks" id="donJulio">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="donJulio.html"> 
+                            <img src='https://image.ibb.co/gKqohx/DonJulio.jpg'>
+                            <span class="card-title" class= "center-align">Don Julio Tequila</span>
+                            </a>
+                            </div>
+                      </div> 
+                    </div>
+                    <div class = "blocks" id="casaAmigos">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="casaAmigos.html"> 
+                            <img src='https://image.ibb.co/iUEs9c/Casa_Amigos.jpg'>
+                            <span class="card-title" class= "center-align">Casa Amigos Tequila</span>
+                            </a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class = "blocks" id="avion">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="avion.html"> 
+                            <img src='https://image.ibb.co/np5caH/Avion.jpg'>
+                            <span class="card-title" class= "center-align">Avion Tequila</span>
+                            </a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class = "blocks" id="512">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="512.html"> 
+                            <img src='https://image.ibb.co/m20X9c/512.jpg'>
+                            <span class="card-title" class= "center-align">512 Tequila</span>
+                            </a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class = "blocks" id="altos">
+                        <div class="card">
+                            <div class="card-image">
+                            <a href="altos.html"> 
+                            <img src='https://image.ibb.co/frnOFH/Altos.jpg'>
+                            <span class="card-title" class= "center-align">Altos Tequila</span>
+                            </a>
+                            </div>
+                        </div> 
+                    </div>
+                                  
+                </div>
+                <!-- footer -->
+              <footer class="page-footer">
+                  <div class="footer-copyright">
+                      <div class="container">
+                      © 2018 Copyright 
+                      </div>
+                  </div>
+              </footer>
 
-    <title>Liquor Lookup</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!--delivery api to use-->
 
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-
-    <!-- Moment.js Reference -->
-    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-  </head>
-
-
-<!--delivery api to use-->
   <a><link href=
     "https://www.delivery.com/search/alcohol?keyword=" + tequilaName
     
-  >
-  <body>
-    <div class="container">
-      <div class="jumbotron">
+           ></a>
 
-      </div>
-    
+          <!--Import jQuery before materialize.js-->
+          
+          <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+          <script type="javascript" href="assets/app.js"></script>
 
-
-
-    </div>
-
-
-
-
-
-
-
-
-    <!-- JavaScript -->
-    <script src="assets/javascript/javascript.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-
-    <!-- Google Maps -->
+          <!-- Google Maps -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcn4Tq5nr14JRNaqLB_v3ErybE207ho4s&callback=initMap"
     async defer></script>
+    
+        </body>
+      </html>
 
-  </body>
 
-</html>
+
+    
 
