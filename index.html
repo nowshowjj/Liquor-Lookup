@@ -1,50 +1,97 @@
 
-<!DOCTYPE html>
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!--Import materialize.css-->
+        
+        <link rel="stylesheet" href="assets/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src='https://code.jquery.com/jquery.js'></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
+        
+        
+       
+    
+          <!--Let browser know website is optimized for mobile-->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </head>
+    
+        <body>
+        
+                <div class="container">
+                    <!--nav bar-->
+                  <nav>
+                        <div class="nav-wrapper">
+                          <a href="#!" class="brand-logo">
+                              <img class = "brandImage" src="assets/images/logo.jpg">
+                          </a>
+                          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                          <ul class="right hide-on-med-and-down">
+                            <li class="active"><a href="https://www.jquery-az.com/jquery-tips/">Home</a></li>
+                            <li><a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a></li>
+                           
+                          </ul>
+                          <ul class="side-nav" id="mobile-demo">
+                            <li class="active"><a href="https://www.jquery-az.com/jquery-tips/">Home</a></li>
+                            <li><a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a></li>
+                          </ul>
+                        </div>
+                  </nav>
 
-<html lang="en-us">
+                  <!-- Masonry blocks for content-->
 
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Get On The Train!</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-
-    <!-- Moment.js Reference -->
-    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-  </head>
-
-
-<!--delivery api to use-->
+                    <div class = "blocks">
+                        <img src='https://image.ibb.co/gPKyhx/ocho.jpg'>
+                    </div>
+                    <div class = "blocks">
+                        <img src='https://image.ibb.co/cGmThx/Patron.jpg'>
+                    </div>
+                    <div class = "blocks">
+                         <img src='https://image.ibb.co/hk4s9c/Herradura.jpg'>
+                    </div>
+                    <div class = "blocks">
+                            <img src='https://image.ibb.co/njfX9c/Dulce_Vida.jpg'>
+                    </div>
+                    <div class = "blocks">
+                            <img src='https://image.ibb.co/gKqohx/DonJulio.jpg'>
+                    </div>
+                    <div class = "blocks">
+                            <img src='https://image.ibb.co/iUEs9c/Casa_Amigos.jpg'>
+                    </div>
+                    <div class = "blocks">
+                            <img src='https://image.ibb.co/np5caH/Avion.jpg'>
+                    </div>
+                    <div class = "blocks">
+                            <img src='https://image.ibb.co/m20X9c/512.jpg'>
+                    </div>
+                    <div class = "blocks">
+                            <img src='https://image.ibb.co/frnOFH/Altos.jpg'>
+                    </div>
+                                  
+                </div>
+                <!--delivery api to use-->
   <a><link href=
     "https://www.delivery.com/search/alcohol?keyword=" + tequilaName
     
   >
-  <body>
+          <!--Import jQuery before materialize.js-->
+          
+          <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+          <script type="javascript" href="assets/app.js"></script>
+
+          
+    
+        </body>
+      </html>
 
 
 
-
-
-
-
-    <!-- JavaScript -->
-    <script src="assets/javascript/javascript.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-
-  </body>
-
-</html>
+    
 
