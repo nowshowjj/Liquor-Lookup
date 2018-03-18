@@ -23,6 +23,11 @@ html, body{
     padding: 5px;
 }
 
+.card-title {
+    font: bold;
+    font-size: 30px;
+}
+
 .blocks {
     
     display: inline-block;
