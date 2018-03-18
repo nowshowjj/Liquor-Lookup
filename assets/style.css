@@ -40,3 +40,11 @@ img{
     border-radius: 4px;
     max-width: 280px;
 }
+
+.page-footer{
+    background-color: black !important;
+}
+
+.footer-copyright {
+    background-color: black !important;
+}
