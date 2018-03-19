@@ -7,9 +7,10 @@
           <!--Import materialize.css-->
         
         <link rel="stylesheet" href="assets/style.css"/>
+        <script src='https://code.jquery.com/jquery.js'></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script src='https://code.jquery.com/jquery.js'></script>
+        
         <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
@@ -23,12 +24,14 @@
     
         <body>
         
-                <div class="container">
+                
                     <!--nav bar-->
-                  <nav>
+                <div class="navbar-fixed">
+                <nav>
                         <div class="nav-wrapper">
                           <a href="index.html" class="brand-logo">
-                              <img class = "brandImage" src="assets/images/logo.jpg">
+                              <img class = "brandImage" src="assets/images/logo.jpg">Liquor Lookup
+                              
                           </a>
                           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                           <ul class="right hide-on-med-and-down">
@@ -42,14 +45,16 @@
                           </ul>
                         </div>
                   </nav>
-
+                  </div>
+                  <br>
+                  <div class="container">
                   <!-- text -->
-                  <h3>Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
+                  <h3 class ="flow-text">Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
                     to you.</h3>
-                  <h4>Enjoy!</h4>
+                  <h4 class="flow-text">Enjoy!</h4>
 
                   <!-- Masonry blocks for content-->
-
+                 
                     <div class = "blocks" id="ocho">
                         <div class="card">
                             <div class="card-image">
@@ -94,7 +99,7 @@
                         <div class="card">
                             <div class="card-image">
                             <a href="donJulio.html"> 
-                            <img src='https://image.ibb.co/gKqohx/DonJulio.jpg'>
+                            <img src='https://s26.postimg.org/wfb8ztrfd/Agave-plant-tequila-field_105619.jpg'>
                             <span class="card-title" class= "center-align">Don Julio Tequila</span>
                             </a>
                             </div>
@@ -159,9 +164,10 @@
   >
           <!--Import jQuery before materialize.js-->
           
-          <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          
           <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          
           <script type="javascript" href="assets/app.js"></script>
 
           
