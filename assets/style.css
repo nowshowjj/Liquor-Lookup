@@ -9,7 +9,7 @@ html, body{
     max-width: 1009px;
     background-color: darkgray !important;
     margin: auto !important;
-    font-size: 25px;
+    
 }
 
 .container {
@@ -22,7 +22,7 @@ html, body{
 
 .nav-wrapper {
     background-color: #212121;
-    font-size: 20px;   
+      
 }
 
 .brand-logo{
@@ -39,7 +39,7 @@ html, body{
 
 .card-title {
     font-weight:  bold !important;
-    font-size: 30px !important;
+    
     color:whitesmoke !important;
     
     text-align: center !important;
