@@ -29,8 +29,8 @@
                 <div class="navbar-fixed">
                 <nav>
                         <div class="nav-wrapper">
-                          <a href="index.html" class="brand-logo">
-                              <img class = "brandImage" src="assets/images/logo.jpg">Liquor Lookup
+                          <a href="index.html" class="brand-logo" class="flow-text">
+                              <img class = "brandImage" src="assets/images/logo.jpg">
                               
                           </a>
                           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -49,18 +49,15 @@
                   <br>
 
                   <!--text -->
-                  <div class = "textContainer">
+                  <div class = "container">
                       <h3 class ="flow-text">Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
                           to you.</h3>
                         <h4 class="flow-text">Enjoy!</h4>
                   </div>
                   <br>
-                  <div class="container">
-                  
-                  
 
-                  <!-- Masonry blocks for content-->
-                 
+<!-- Masonry blocks for content-->
+                  <div class="container">                
                     <div class = "blocks" id="ocho">
                         <div class="card">
                             <div class="card-image">
@@ -174,8 +171,12 @@
           
           
           <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+          <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
           <script>
+              $('div.container').imagesLoaded( function() {
+                  // images have loaded
+                  });
                $(window).on('load', function(){
                   $('div.container').masonry({
                     columnWidth: 'div.blocks',
