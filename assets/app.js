@@ -9,12 +9,12 @@
   };
   firebase.initializeApp(config);
  //masonry 
-   $(window).on('load', function(){
-      $('div.container').masonry({
-          columnWidth: 'div.blocks',
-          itemSelector: 'div.blocks'
-      });
-    })  
+   //$(window).on('load', function(){
+    //  $('div.container').masonry({
+    //      columnWidth: 'div.blocks',
+     //     itemSelector: 'div.blocks'
+    //  });
+  //  })  
   // nav buttons for mobile
   $(".button-collapse").sideNav();
         
