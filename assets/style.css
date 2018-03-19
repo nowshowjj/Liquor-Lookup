@@ -4,6 +4,13 @@ html, body{
     background-color:black;
 }
 
+.textContainer {
+    padding: 10px 25px 10px 25px;
+    max-width: 1009px;
+    background-color: darkgray;
+    margin: auto;
+}
+
 .container {
     padding: 10px 25px 10px 25px;
     max-width: 1300px;
