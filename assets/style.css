@@ -4,11 +4,12 @@ html, body{
     background-color:black;
 }
 
-.textContainer {
+.card-panel {
     padding: 10px 25px 10px 25px;
     max-width: 1009px;
-    background-color: darkgray;
-    margin: auto;
+    background-color: darkgray !important;
+    margin: auto !important;
+    font-size: 25px;
 }
 
 .container {
