@@ -8,6 +8,16 @@
     messagingSenderId: "663286812715"
   };
   firebase.initializeApp(config);
+ //masonry 
+   //$(window).on('load', function(){
+    //  $('div.container').masonry({
+    //      columnWidth: 'div.blocks',
+     //     itemSelector: 'div.blocks'
+    //  });
+  //  })  
+  // nav buttons for mobile
+  $(".button-collapse").sideNav();
+        
 
 
       // Requires that you consent to location sharing when
@@ -49,3 +59,4 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
+
