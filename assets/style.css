@@ -21,7 +21,7 @@ html, body{
 }
 
 .nav-wrapper {
-    background-color: #212121;
+    background-color: #282826;
       
 }
 
@@ -68,3 +68,23 @@ img{
 .footer-copyright {
     background-color: black !important;
 }
+
+
+.modal {
+    max-height: 90%;
+    padding: 20px;
+    margin: 20px;
+    
+  }
+  
+  .modal-form-row {
+    margin-bottom: 0px;
+  }
+
+  .modal-content {
+      padding: 10px;
+  }
+
+ 
+
+  

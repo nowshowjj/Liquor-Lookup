@@ -1,3 +1,23 @@
+$(document).ready(function(){
+  $('.modal1').modal('open');
+});
+
+$('.modal').modal({
+  dismissible: true, // Modal cannot be dismissed by clicking outside of the modal
+  opacity: .5, // Opacity of modal background
+  inDuration: 300, // Transition in duration
+  outDuration: 200, // Transition out duration
+  startingTop: '4%', // Starting top style attribute
+  endingTop: '10%', // Ending top style attribute
+  ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+    alert("Ready");
+    console.log(modal, trigger);
+  },
+  complete: function() { alert('Closed'); } // Callback for Modal close
+}
+);
+  
+  
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCVlYwiaCNakcW2nFtFvSy1mV0iNBCRYjw",
@@ -8,6 +28,29 @@
     messagingSenderId: "663286812715"
   };
   firebase.initializeApp(config);
+
+  var messagesRef = firebase.database().ref("messages");
+
+
+  document.getElementById('email').addEventListener('submit', submitForm);
+
+  function submitForm (e){
+      e.preventDefault();
+
+      var email = getInputValues("email");
+
+      saveMessage(email);
+
+  }
+
+   //save message to firebase
+
+   function saveMessage (email){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        email: email
+    })
+}
  //masonry 
    //$(window).on('load', function(){
     //  $('div.container').masonry({
