@@ -49,29 +49,43 @@
                   </nav>
                   </div>
                   <br>
-                  <!--modal-->
-                  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                  
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-         
-
-                  <!--text -->
+                 
+                        <!--text -->
                         <div class="card-panel flow-text">
                           <span class="black-text valign">Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
                               to you.
-                            Enjoy!
+                            Want more information on great events?  Click here:
+                            <a class="waves-effect waves-light btn black modal-trigger cyan-text" href="#modal1" id ="btn1">I want more!</a>
                           </span>
                         </div>
+                        
+
+                   <!-- Modal Structure -->
+                   <div id="modal1" class="modal">
+                       <div class="modal-content">
+                          <h4>Input your email to get notice of sales, tastings and events</h4>
+    
+                          <div class="row">
+                            <form class = "col s12" id="emailForm">
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <br>
+                                <input id="email" type="email" class="validate" required="true">
+                                <label for="email" data-error="wrong" data-success="right">your email</label>
+                              </div>
+                            </div>                     
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                                <button id="submitButton" form ="emailForm" class=" modal-action modal-close waves-effect waves-green btn-flat disabled" disabled="disabled" type = "submit" name = "action">Submit</button>
+                          </div>
+                        </div>
+    
+                  </div>
+                  <br>
+
                   <br>
 
 <!-- Masonry blocks for content-->
