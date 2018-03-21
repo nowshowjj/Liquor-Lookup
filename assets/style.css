@@ -69,13 +69,14 @@ img{
 .footer-copyright {
     background-color: black !important;
 }
-<<<<<<< HEAD
 
+.theme-color {
+    background-color: cyan;
+}
 
 .modal {
     max-height: 90%;
-    padding: 20px;
-    margin: 20px;
+    
     
   }
   
@@ -83,13 +84,9 @@ img{
     margin-bottom: 0px;
   }
 
-  .modal-content {
-      padding: 10px;
-  }
+  
 
  
 
   
-=======
->>>>>>> 8a27415f92b96bd42745fdfcfeedc42291ff806d
->>>>>>> 2b75808d24f3301b4ac7d2fa64e364cfc384797b
+
