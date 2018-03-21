@@ -48,26 +48,20 @@
                   </div>
                   <br>
                   <!--modal-->
-                  <div class="modal-trigger" data-target="modal1" id="modal1" class="modal">
-                      <div class="modal-content">
-                        <h6 class="flow-text cyan-text">Welcome to Liquor Lookup - find where the best liquors are sold or get them delivered - enter your email to get notices of special events</h6>
-                  
-                        <div class="row">
-                          <form class="col s12">
-                            <div class = "row"></div>
-                            <div class="row">
-                              <div class="input-field col s12 cyan-text">
-                                <textarea id="email" type="text" class="materialize-textarea validate"></textarea>
-                                <label for="email">Email Address</label>
-                              </div>
-                            </div>             
-                          </form>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <a class=" modal-action modal-close waves-effect waves-grey btn-flat cyan-text">Submit</a>
-                      </div>
-                    </div>
+                  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+         
 
                   <!--text -->
                         <div class="card-panel flow-text">
