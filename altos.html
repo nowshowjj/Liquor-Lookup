@@ -6,6 +6,7 @@
           <!--Import materialize.css-->
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <script src="assets/app.js"></script>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src='https://code.jquery.com/jquery.js'></script>
         <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -27,6 +28,8 @@
                 margin: auto;
                 opacity: .85;
             }
+
+
             .nav-wrapper {
                 background-color: #212121;
                 font-size: 20px;
@@ -37,6 +40,36 @@
                 max-height: 62px;
                 padding: 5px;
             }
+
+            #graphic {
+                margin-top: 15px;
+                margin-left: 360px;
+            }
+
+            h3, h4, p {
+                text-align: center;
+            }
+
+            .left-card {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-left: 225px;
+            }
+
+            .right-card {
+                margin-top: 50px;
+                margin-right: 225px;
+                float: right;
+            }
+
+            .card-title {
+                text-align: center;
+                color: #4aaaa5;
+                font-size: 22px;
+                font-family: 'Georgia', Times, Times New Roman, serif;
+                font-weight: bolder;
+            }
+
 
         </style>
        
@@ -64,14 +97,48 @@
                               </ul>
                             </div>
                       </nav>
-            <h1>altos</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptates voluptatum fuga dolorem ipsa esse cumque error,
-                quos earum asperiores vel repellat omnis quidem. Magnam repellendus quibusdam velit nam mollitia. Lorem, ipsum dolor
-                sit amet consectetur adipisicing elit. Ad nesciunt facilis veniam modi explicabo aspernatur dignissimos, tenetur fuga,
-                autem distinctio illo quam, temporibus a aperiam similique voluptatibus porro saepe dolorem! Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Quod, magnam, quae in incidunt placeat possimus unde a dolores praesentium accusamus quam
-                aut, impedit laborum! Quibusdam ea cum quisquam officiis veritatis.</p>
+            <img class="img-responsive center-block">
+                <img id="graphic" src="https://image.ibb.co/g7MzUc/altoslogo.png" height="20%" width="20%">
+            <h3>Olemca Altos Tasting Notes</h3>
+           <div class="row">
+                <div class="col s12 m4 l4"><h4>Silver</h4><p>The unaged plata has a nice kick of roasted agave on the sweet nose, along with citrus, pepper and brine. The soft palate offers lime, agave and spice with grassy notes. The long finish lingers with more agave, fruit and pepper. Competitively priced and well suited for mixing in cocktails</p></div>
+                <div class="col s12 m4 l4"><h4>Reposado</h4><p>Master distiller Jesús Hernandez produces Olmeca Altos tequila using traditional methods, from slow-cooking the piñas in a brick oven to crushing the cooked piñas with a tahona (stone wheel) and distilling with small copper pot stills. Olmeca Altos also touts their use of cultivated yeast, rather than “wild or commercial yeast that is often used by competitors.” The reposado is aged 8-10 months in used bourbon barrels.</p></div>
+                <div class="col s12 m4 l4"><h4>Anejo</h4><p>Olmeca Altos Añejo Tequila is the latest in the brand's lineup and it begins with 100% blue weber agave harvested 7,000 feet above sea level in the volcanic rich soils of Los Altos, Jalisco. Traditional production methods are used, from slow-cooking the agave in brick ovens then crushing the agave using a tahona stone, they way it was done 500 years ago. After double-distillation in copper stills, it ages 18 months in bourbon oak barrels before bottling.</p></div>
             </div>
+        </div>
+            <br>
+
+            <div class="map-con">
+                    <div class="row">
+                        <div class="col-md-7">
+                                <div class="row">
+                                        <div class="card left-card" style="width: 650px;">
+                                            <div class="card-body">
+                                                <div id="map" style="width:650px; height:350px"></div>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                     <!-- Details Card -->
+             
+                        <div class="col-md-4 offset-1 right-card">
+                            <div class="card" style="width: 270px;">
+                                <div class="card-body">
+                                <h5 class="card-title">Details</h5> <!--change the title if you want -->
+                                <hr>
+                                <p class="card-text"></p>
+
+                                </div>
+                            </div>
+                        </div> 
+                    
+                    </div>
+            </div>  
+
+
+                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMlB7BfshQ45QS35KH_HEc1aXOIHqJcpw&libraries=places"></script>
+        
         </body>
 
         </html>
