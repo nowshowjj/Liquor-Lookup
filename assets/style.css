@@ -1,6 +1,6 @@
 
 
-html, body{
+html, body {
     margin: 0px;
     background-color:black;
 }
@@ -10,7 +10,6 @@ html, body{
     max-width: 1009px;
     background-color: darkgray !important;
     margin: auto !important;
-    
 }
 
 .container {
@@ -18,43 +17,39 @@ html, body{
     max-width: 1300px;
     background-color: darkgray;
     margin: auto;
-    
+    align-items: center;
 }
 
 .nav-wrapper {
     background-color: #282826;
-      
 }
 
 .brand-logo{
     color: #00bcd4 !important;
     padding: 5px;
-    
 }
 
 .brandImage {
     max-height: 62px;
-    padding: 5px;
-    
+    padding: 5px;  
 }
 
 .card-title {
     font-weight:  bold !important;
-    
     color:whitesmoke !important;
-    
-    text-align: center !important;
     margin: 10px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
 }
 
 .blocks {
-    
     display: inline-block;
     max-width: 300px;
     padding: 10 px;
     margin: 10px 5px 5px 15px;
 }
-img{
+
+img {
     border: 1px solid #ddd;
     border-radius: 4px;
     max-width: 270px;
@@ -62,14 +57,14 @@ img{
     opacity: .9;
 }
 
-.page-footer{
+.page-footer {
     background-color: black !important;
 }
 
 .footer-copyright {
     background-color: black !important;
 }
-<<<<<<< HEAD
+
 
 
 .modal {
@@ -90,6 +85,4 @@ img{
  
 
   
-=======
->>>>>>> 8a27415f92b96bd42745fdfcfeedc42291ff806d
 >>>>>>> 2b75808d24f3301b4ac7d2fa64e364cfc384797b
