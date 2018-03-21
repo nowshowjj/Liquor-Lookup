@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+$('#modal1').modal('open');
+  
+=======
+<<<<<<< HEAD
 var app = angular.module('app', ['ngAnimate'])
 =======
+>>>>>>> 2b75808d24f3301b4ac7d2fa64e364cfc384797b
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCVlYwiaCNakcW2nFtFvSy1mV0iNBCRYjw",
@@ -11,6 +16,29 @@ var app = angular.module('app', ['ngAnimate'])
     messagingSenderId: "663286812715"
   };
   firebase.initializeApp(config);
+
+  var messagesRef = firebase.database().ref("messages");
+
+
+  document.getElementById('email').addEventListener('submit', submitForm);
+
+  function submitForm (e){
+      e.preventDefault();
+
+      var email = getInputValues("email");
+
+      saveMessage(email);
+
+  }
+
+   //save message to firebase
+
+   function saveMessage (email){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        email: email
+    })
+}
  //masonry 
    //$(window).on('load', function(){
     //  $('div.container').masonry({

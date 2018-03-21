@@ -245,7 +245,7 @@ html, body{
 }
 
 .nav-wrapper {
-    background-color: #212121;
+    background-color: #282826;
       
 }
 
@@ -292,4 +292,27 @@ img{
 .footer-copyright {
     background-color: black !important;
 }
+<<<<<<< HEAD
+
+
+.modal {
+    max-height: 90%;
+    padding: 20px;
+    margin: 20px;
+    
+  }
+  
+  .modal-form-row {
+    margin-bottom: 0px;
+  }
+
+  .modal-content {
+      padding: 10px;
+  }
+
+ 
+
+  
+=======
 >>>>>>> 8a27415f92b96bd42745fdfcfeedc42291ff806d
+>>>>>>> 2b75808d24f3301b4ac7d2fa64e364cfc384797b
