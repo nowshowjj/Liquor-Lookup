@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="assets/style.css"/>
         <link rel="stylesheet" href="assets/app.js"/>
         <script src='https://code.jquery.com/jquery.js'></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
@@ -49,30 +50,44 @@
                   </nav>
                   </div>
                   <br>
-                  <!--modal-->
-                  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                  
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-         
-
-                  <!--text -->
+                 
+                        <!--text -->
                         <div class="card-panel flow-text">
                           <span class="black-text valign">Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
                               to you.
-                            Enjoy!
+                            Want more information on great events?  Click here:
+                            <a class="waves-effect waves-light btn black modal-trigger cyan-text" href="#modal1" id ="btn1">I want more!</a>
                           </span>
                         </div>
+                        
+
+                   <!-- Modal Structure -->
+                   <div id="modal1" class="modal">
+                       <div class="modal-content">
+                          <h4>Input your email to get notice of sales, tastings and events</h4>
+    
+                          <div class="row">
+                            <form class = "col s12" id="emailForm">
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <br>
+                                <input id="email" type="email" class="validate" required="true">
+                                <label for="email" data-error="wrong" data-success="right">your email</label>
+                              </div>
+                            </div>                     
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                                <button id="submitButton" form ="emailForm" class=" modal-action modal-close waves-effect waves-green btn-flat disabled" disabled="disabled" type = "submit" name = "action">Submit</button>
+                          </div>
+                        </div>
+    
+                  </div>
                   <br>
+
+                 
 
 <!-- Masonry blocks for content-->
                   <div class="container">                
@@ -202,6 +217,34 @@
                    });
                 })  
           </script>
+          <script>
+              $(document).ready(function(){
+              // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+              $('.modal').modal();
+              
+           })
+           
+           $(document).ready(function(){
+            
+            $('#emailForm').on('keyup', function(){
+             var validator = $("#emailForm").validate();
+            if (validator.form() && validateEmail($('#email').val())) {
+              $('#submitButton').prop('disabled', false);
+              $('#submitButton').removeClass('disabled');
+            }
+              else{
+                $('#submitButton').prop('disabled', true);
+                $('#submitButton').addClass('disabled');
+                }
+            }  );
+           })
+           
+           function validateEmail(email) {
+           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+           return re.test(email.toLowerCase());
+           };
+           </script>
+          
           <script type="javascript" href="assets/app.js"></script>
 
           <!-- Google Maps -->
