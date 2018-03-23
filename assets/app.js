@@ -46,42 +46,7 @@
     //  });
   //  })  
 
- //Masonry tiles
-              $('div.container').imagesLoaded( function() {
-                  // images have loaded
-                  });
-               $(window).on('load', function(){
-                  $('div.container').masonry({
-                    columnWidth: 'div.blocks',
-                    itemSelector: 'div.blocks',
-                   });
-                })  
-  //Modal        
-          $(document).ready(function(){
-              // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-              $('.modal').modal();
-              
-           })
-           
-           $(document).ready(function(){
-            
-            $('#emailForm').on('keyup', function(){
-             var validator = $("#emailForm").validate();
-            if (validator.form() && validateEmail($('#email').val())) {
-              $('#submitButton').prop('disabled', false);
-              $('#submitButton').removeClass('disabled');
-            }
-              else{
-                $('#submitButton').prop('disabled', true);
-                $('#submitButton').addClass('disabled');
-                }
-            }  );
-           })
-           
-           function validateEmail(email) {
-           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-           return re.test(email.toLowerCase());
-           };
+ 
   // nav buttons for mobile
   $(".button-collapse").sideNav();
         
