@@ -1,97 +1,198 @@
 <!DOCTYPE html>
-      <html>
-        <head>
-          <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-          <!--Import materialize.css-->
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script src='https://code.jquery.com/jquery.js'></script>
-        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
-        
-        <style>
-            html, body{
-                background-image: url('https://image.ibb.co/m20X9c/512.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin: 0px;
-               }
+<html>
 
-            .container {
-                background-color: darkgray;
-                padding: 10px 25px 10px 25px;
-                max-width: 1300px;
-                margin: auto;
-                opacity: .85;
-            }
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
 
-            .nav-wrapper {
-                background-color: #212121;
-                font-size: 20px;
-            }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="assets/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src='https://code.jquery.com/jquery.js'></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
 
-            .brandImage {
-                max-height: 62px;
-                padding: 5px;
-            }
+    <style>
+        html,
+        body {
+            background-image: url('https://image.ibb.co/m20X9c/512.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0px;
+        }
 
-            h3, h4 {
-                text-align: center;
-            }
+        .container {
+            background-color: darkgray;
+            padding: 10px 25px 10px 25px;
+            max-width: 1300px;
+            margin: auto;
+            opacity: .85;
+        }
 
-            p {
-                text-align: center;
-            }
+        .nav-wrapper {
+            background-color: #212121;
+            font-size: 20px;
+        }
 
-            #graphic {
-                margin-top: 2%;
-                margin-left: 20%;
-            }
+        .brandImage {
+            max-height: 62px;
+            padding: 5px;
+        }
 
-        </style>
-       
-    
-          <!--Let browser know website is optimized for mobile-->
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        </head>
-    
-        <body>
-            <div class="container">
-                    <nav>
-                            <div class="nav-wrapper">
-                              <a href="index.html" class="brand-logo">
-                                  <img class = "brandImage" src="assets/images/logo.jpg">
-                              </a>
-                              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                              <ul class="right hide-on-med-and-down">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a></li>
-                               
-                              </ul>
-                              <ul class="side-nav" id="mobile-demo">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a></li>
-                              </ul>
-                            </div>
-                      </nav>
+        h3,
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        #graphic {
+            margin-top: 2%;
+            margin-left: 20%;
+        }
+
+        h6 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .left-card {
+            float: left;
+            margin-left: 10%;
+        }
+        .active:hover {
+            background-color: #3498db;
+        }
+        .deliver:hover {
+            background-color: #3498db;
+        }
+        .about:hover {
+            background-color: #3498db;
+        }
+
+        .btn {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 49;
+            -moz-border-radius: 49;
+            border-radius: 49px;
+            font-family: Arial;
+            color: white;
+            font-size: 18px;  
+            margin-left: 35%;     
+        }
+
+        .btn:hover {
+            background: #9dbdd1;
+            background-image: -webkit-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: -moz-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: -ms-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: -o-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: linear-gradient(to bottom, #9dbdd1, #022f4d);
+        }
+    </style>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">
+                    <img class="brandImage" src="assets/images/logo.jpg">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="deliver">
+                        <a href="https://drizly.com/search?utf8=%E2%9C%93&q=512">Delivery</a>
+                    </li>
+                    <li class="about">
+                        <a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a>
+                    </li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="row">
             <div class="col s12 m12 l12" id="graphic">
                 <img class="img-responsive center-block">
-        <img class="img-responsive center-block">
-        <img id="graphic" src="https://image.ibb.co/cc2ypc/512logo.png" height="15%" width="15%"> 
+                <img class="img-responsive center-block">
+                <img id="graphic" src="https://image.ibb.co/cc2ypc/512logo.png" height="15%" width="15%">
             </div>
         </div>
-            <h3>Tequila 512 Tasting Notes</h3>   
+        <h3>Tequila 512 Tasting Notes</h3>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <h4>Silver</h4>
+                <h6>Tasting Panel Rating: 74</h6>
+                <p>Spicy and soulful, this rich 100% agave tequila surprises with a super smooth finish. It's bold and welcoming.
+                    Just like the 512.</p>
+            </div>
+            <div class="col s12 m4 l4">
+                <h4>Reposado</h4>
+                <h6>Tasting Panel Rating: 76</h6>
+                <p>Blanco tequila and rest it in charred oak bourbon casks for 6 months. The result is a full-bodied Reposado
+                    that charms with its mellow richness.</p>
+            </div>
+            <div class="col s12 m4 l4">
+                <h4>Anejo</h4>
+                <h6>Tasting Panel Rating: 86</h6>
+                <p>The first batch of Tequila 512 Añejo has been rested for over a year in bourbon casks. A beautifully sweet
+                    and organic approach with a peppery body and slight mango finish. It is finally ready and coming to a
+                    store near you!</p>
+            </div>
+        </div>
+
+        <h4>Where you can find 512:</h4>
+        <div class="map-con">
             <div class="row">
-                <div class="col s12 m4 l4"><h4>Silver</h4><p>Spicy and soulful, this rich 100% agave tequila surprises with a super smooth finish. It's bold and welcoming. Just like the 512.</p></div>
-                <div class="col s12 m4 l4"><h4>Reposado</h4><p>Blanco tequila and rest it in charred oak bourbon casks for 6 months. The result is a full-bodied Reposado that charms with its mellow richness.</p></div>
-                <div class="col s12 m4 l4"><h4>Anejo</h4><p>The first batch of Tequila 512 Añejo has been rested for over a year in bourbon casks. A beautifully sweet and organic approach with a peppery body and slight mango finish. It is finally ready and coming to a store near you!</p></div>
+
+
+                <!-- Details Card -->
+
+
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="card left-card">
+                            <div class="card-body">
+                                <div id="map" style="width:650px; height:350px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <btn onclick="window.location='https://drizly.com/search?utf8=%E2%9C%93&q=512';">Have it Delivered!</btn>
+                </div>
             </div>
 
-            
-        </body>
+        </div>
 
-        </html>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMlB7BfshQ45QS35KH_HEc1aXOIHqJcpw&libraries=places"></script>
+    </div>
+</body>
+
+</html>

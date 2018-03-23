@@ -1,29 +1,60 @@
 
+<<<<<<< HEAD
+body {
+=======
 
 html, body{
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
     margin: 0px;
-    background-color:black;
+    background-color:rgba(24, 23, 23, 0.993);
 }
 
-.card-panel {
-    padding: 10px 25px 10px 25px;
-    max-width: 1009px;
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    max-width: 240px;
+    float: left;
+}
+h5 {
+    text-align: center;
+}
+
+.card-panel-flow-text {
+    max-width: 70%;
     background-color: darkgray !important;
+<<<<<<< HEAD
+    margin: auto;
+    margin-left: 15%;
+    border: solid 2px white;
+=======
     margin: auto !important;
     
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
-.container {
-    padding: 10px 25px 10px 25px;
-    max-width: 1300px;
+.grid {
+    max-width: 100%;
     background-color: darkgray;
+<<<<<<< HEAD
+    margin-left: 15%;
+    border: solid 2px white;
+=======
     margin: auto;
     
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .nav-wrapper {
     background-color: #282826;
+<<<<<<< HEAD
+    border-bottom: solid 2px lightgray;
+=======
       
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .brand-logo{
@@ -33,15 +64,27 @@ html, body{
 }
 
 .brandImage {
+<<<<<<< HEAD
+    max-height: 60px;
+=======
     max-height: 62px;
     padding: 5px;
     
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .card-title {
     font-weight:  bold !important;
     
     color:whitesmoke !important;
+<<<<<<< HEAD
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+img {
+    max-width: 100%;
+=======
     
     text-align: center !important;
     
@@ -60,6 +103,7 @@ img{
     border-radius: 4px;
     max-width: 270px;
     background-color: black !important;
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
     opacity: .9;
 }
 
