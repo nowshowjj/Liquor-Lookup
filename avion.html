@@ -65,6 +65,44 @@
             float: left;
             margin-left: 10%;
         }
+
+        .active:hover {
+            background-color: #3498db;
+        }
+
+        .deliver:hover {
+            background-color: #3498db;
+        }
+
+        .about:hover {
+            background-color: #3498db;
+        }
+
+
+        .btn {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 49;
+            -moz-border-radius: 49;
+            border-radius: 49px;
+            font-family: Arial;
+            color: white;
+            font-size: 18px;
+            margin-left: 35%;
+        }
+
+        .btn:hover {
+            background: #9dbdd1;
+            background-image: -webkit-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: -moz-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: -ms-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: -o-linear-gradient(top, #9dbdd1, #022f4d);
+            background-image: linear-gradient(to bottom, #9dbdd1, #022f4d);
+        }
     </style>
 
 
@@ -86,7 +124,10 @@
                     <li class="active">
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="deliver">
+                        <a href="https://drizly.com/search?utf8=%E2%9C%93&q=512">Delivery</a>
+                    </li>
+                    <li class="about">
                         <a href="https://www.jquery-az.com/javascript-tutorials/">About Us</a>
                     </li>
 
@@ -154,22 +195,25 @@
 
                 <div class="col-md-5 offset-1 right-card">
 
-               
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="card left-card">
-                            <div class="card-body">
-                                <div id="map" style="width:650px; height:350px"></div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="card left-card">
+                                <div class="card-body">
+                                    <div id="map" style="width:650px; height:350px"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="btn">
+                        <btn onclick="window.location='https://drizly.com/search?utf8=%E2%9C%93&q=512';">Have it Delivered!</btn>
+                    </div>
                 </div>
             </div>
+
+
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMlB7BfshQ45QS35KH_HEc1aXOIHqJcpw&libraries=places"></script>
         </div>
-
-
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMlB7BfshQ45QS35KH_HEc1aXOIHqJcpw&libraries=places"></script>
-    </div>
 
 
 </body>

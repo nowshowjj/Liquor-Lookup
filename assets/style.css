@@ -1,5 +1,10 @@
 
+<<<<<<< HEAD
 body {
+=======
+
+html, body{
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
     margin: 0px;
     background-color:rgba(24, 23, 23, 0.993);
 }
@@ -21,45 +26,88 @@ h5 {
 .card-panel-flow-text {
     max-width: 70%;
     background-color: darkgray !important;
+<<<<<<< HEAD
     margin: auto;
     margin-left: 15%;
     border: solid 2px white;
+=======
+    margin: auto !important;
+    
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .grid {
     max-width: 100%;
     background-color: darkgray;
+<<<<<<< HEAD
     margin-left: 15%;
     border: solid 2px white;
+=======
+    margin: auto;
+    
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .nav-wrapper {
     background-color: #282826;
+<<<<<<< HEAD
     border-bottom: solid 2px lightgray;
+=======
+      
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .brand-logo{
     color: #00bcd4 !important;
     padding: 5px;
+    
 }
 
 .brandImage {
+<<<<<<< HEAD
     max-height: 60px;
+=======
+    max-height: 62px;
+    padding: 5px;
+    
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 }
 
 .card-title {
     font-weight:  bold !important;
+    
     color:whitesmoke !important;
+<<<<<<< HEAD
     text-align: center;
     text-shadow: 1px 1px 2px black;
 }
 
 img {
     max-width: 100%;
+=======
+    
+    text-align: center !important;
+    
+}
+
+.blocks {
+    
+    display: inline-block;
+    max-width: 300px;
+    margin: 0px;
+   
+    
+}
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 270px;
+    background-color: black !important;
+>>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
     opacity: .9;
 }
 
-.page-footer {
+.page-footer{
     background-color: black !important;
 }
 
@@ -71,8 +119,7 @@ img {
 
 .modal {
     max-height: 90%;
-    padding: 20px;
-    margin: 20px;
+    
     
   }
   
@@ -80,11 +127,9 @@ img {
     margin-bottom: 0px;
   }
 
-  .modal-content {
-      padding: 10px;
-  }
+  
 
  
 
   
->>>>>>> 2b75808d24f3301b4ac7d2fa64e364cfc384797b
+
