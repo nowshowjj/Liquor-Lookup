@@ -1,5 +1,6 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   // Initialize Firebase
 //   var config = {
 //     apiKey: "AIzaSyCVlYwiaCNakcW2nFtFvSy1mV0iNBCRYjw",
@@ -13,6 +14,8 @@
 
 //   var messagesRef = firebase.database().ref("messages");
 =======
+=======
+>>>>>>> de0594cfc1a10c90f063537adcd3699a758fd1d9
   //Modal for email information
   
 
@@ -29,6 +32,7 @@
    // messagingSenderId: "663286812715"
   //};
   //firebase.initializeApp(config);
+<<<<<<< HEAD
 >>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
 
   //var messagesRef = firebase.database().ref("messages");
@@ -54,6 +58,11 @@
 //     })
 // }
 =======
+=======
+
+  //var messagesRef = firebase.database().ref("messages");
+
+>>>>>>> de0594cfc1a10c90f063537adcd3699a758fd1d9
 
   //document.getElementById('email').addEventListener('submit', submitForm);
 
@@ -74,7 +83,10 @@
     //    email: email
    // })
 //}
+<<<<<<< HEAD
 >>>>>>> 2da60190d844dc8f99c4b441be597313bd1ef70a
+=======
+>>>>>>> de0594cfc1a10c90f063537adcd3699a758fd1d9
  //masonry 
    //$(window).on('load', function(){
     //  $('div.container').masonry({
@@ -120,6 +132,7 @@
            return re.test(email.toLowerCase());
            };
   // nav buttons for mobile
+<<<<<<< HEAD
   // $(".button-collapse").sideNav();
         // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
@@ -141,6 +154,18 @@
           lat: position.coords.latitude,
           lng: position.coords.longitude
         }
+=======
+  $(".button-collapse").sideNav();
+        
+
+
+      // Requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+>>>>>>> de0594cfc1a10c90f063537adcd3699a758fd1d9
         map = new google.maps.Map(document.getElementById('map'), {
           center: myLocation,
           zoom: 12
@@ -192,3 +217,15 @@
   
   initMap();
 
+<<<<<<< HEAD
+=======
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+
+
+>>>>>>> de0594cfc1a10c90f063537adcd3699a758fd1d9
