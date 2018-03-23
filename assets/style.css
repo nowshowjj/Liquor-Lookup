@@ -1,27 +1,41 @@
 
-
-html, body {
+body {
     margin: 0px;
-    background-color:black;
+    background-color:rgba(24, 23, 23, 0.993);
 }
 
-.card-panel {
-    padding: 10px 25px 10px 25px;
-    max-width: 1009px;
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    max-width: 240px;
+    float: left;
+}
+h5 {
+    text-align: center;
+}
+
+.card-panel-flow-text {
+    max-width: 70%;
     background-color: darkgray !important;
-    margin: auto !important;
+    margin: auto;
+    margin-left: 15%;
+    border: solid 2px white;
 }
 
-.container {
-    padding: 10px 25px 10px 25px;
-    max-width: 1300px;
+.grid {
+    max-width: 100%;
     background-color: darkgray;
-    margin: auto;
-    align-items: center;
+    margin-left: 15%;
+    border: solid 2px white;
 }
 
 .nav-wrapper {
     background-color: #282826;
+    border-bottom: solid 2px lightgray;
 }
 
 .brand-logo{
@@ -30,30 +44,18 @@ html, body {
 }
 
 .brandImage {
-    max-height: 62px;
-    padding: 5px;  
+    max-height: 60px;
 }
 
 .card-title {
     font-weight:  bold !important;
     color:whitesmoke !important;
-    margin: 10px;
-    text-shadow: 1px 1px 2px black;
     text-align: center;
-}
-
-.blocks {
-    display: inline-block;
-    max-width: 300px;
-    padding: 10 px;
-    margin: 10px 5px 5px 15px;
+    text-shadow: 1px 1px 2px black;
 }
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    max-width: 270px;
-    background-color: black !important;
+    max-width: 100%;
     opacity: .9;
 }
 
