@@ -7,7 +7,7 @@ html, body{
 
 .card-panel {
     padding: 10px 25px 10px 25px;
-    max-width: 955px;
+    max-width: 95%;
     background-color: darkgray !important;
     margin: auto !important;
     text-align: center
