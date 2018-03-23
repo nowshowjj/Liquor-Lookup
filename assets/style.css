@@ -42,9 +42,9 @@ html, body{
     font-weight:  bold !important;
     
     color:whitesmoke !important;
-    margin: 10px;
-    text-align: center !important;
     
+    text-align: center !important;
+    margin: 10px;
 }
 
 .blocks {
@@ -53,8 +53,6 @@ html, body{
     max-width: 300px;
     padding: 10 px;
     margin: 10px 5px 5px 15px;
-   
-    
 }
 img{
     border: 1px solid #ddd;
@@ -71,7 +69,6 @@ img{
 .footer-copyright {
     background-color: black !important;
 }
-
 
 
 .modal {
