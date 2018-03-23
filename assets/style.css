@@ -66,6 +66,7 @@ img{
 .page-footer{
     background-color: rgba(16, 19, 17, 0.74) !important;
     max-width: 955px;
+    text-align: center; 
 }
 
 .footer-copyright {
