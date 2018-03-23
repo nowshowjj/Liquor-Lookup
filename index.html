@@ -208,6 +208,42 @@
           <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
+           <script>
+              $('div.container').imagesLoaded( function() {
+                  // images have loaded
+                  });
+               $(window).on('load', function(){
+                  $('div.container').masonry({
+                    columnWidth: 'div.blocks',
+                    itemSelector: 'div.blocks',
+                   });
+                })  
+          </script>
+          <script>$(document).ready(function(){
+              // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+              $('.modal').modal();
+              
+           })
+           
+           $(document).ready(function(){
+            
+            $('#emailForm').on('keyup', function(){
+             var validator = $("#emailForm").validate();
+            if (validator.form() && validateEmail($('#email').val())) {
+              $('#submitButton').prop('disabled', false);
+              $('#submitButton').removeClass('disabled');
+            }
+              else{
+                $('#submitButton').prop('disabled', true);
+                $('#submitButton').addClass('disabled');
+                }
+            }  );
+           })
+           
+           function validateEmail(email) {
+           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+           return re.test(email.toLowerCase());
+           };</script>
           
           <script type="javascript" href="assets/app.js"></script>
 
