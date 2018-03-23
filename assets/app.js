@@ -48,7 +48,7 @@
 
  
   // nav buttons for mobile
-  $(".button-collapse").sideNav();
+//   $(".button-collapse").sideNav();
 
 
   var map;
