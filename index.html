@@ -6,9 +6,9 @@
           <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           <!--Import materialize.css-->
-        
+        <script href="assets/app.js"></script>
         <link rel="stylesheet" href="assets/style.css"/>
-        <link rel="stylesheet" href="assets/app.js"/>
+        <link rel="javascript" href="assets/app.js"/>
         <script src='https://code.jquery.com/jquery.js'></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -50,10 +50,12 @@
                   </nav>
                   </div>
                   <br>
+
                   
 
                  
                         <!--text -->
+
                         <div class="card-panel flow-text">
                           <span class="black-text valign">Welcome to Liquor Lookup where you can get information on premium liquors and find out where to buy them or have them delivered
                               to you.
@@ -74,7 +76,9 @@
                               <div class="input-field col s12">
                                 <br>
                                 <input id="email" type="email" class="validate" required="true">
-                                <label for="email" data-error="wrong" data-success="right">your email</label>
+
+                                <label for="email" data-error="wrong" data-success="right"></label>
+
                               </div>
                             </div>                     
                             </form>
@@ -193,12 +197,9 @@
               </footer>
 
 
-                <!--delivery api to use-->
+                
 
-  <a><link href=
-    "https://www.delivery.com/search/alcohol?keyword=" + tequilaName
-    
-           ></a>
+  
 
           <!--Import jQuery before materialize.js-->
           
@@ -206,44 +207,7 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
           <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-          <script>
-              $('div.container').imagesLoaded( function() {
-                  // images have loaded
-                  });
-               $(window).on('load', function(){
-                  $('div.container').masonry({
-                    columnWidth: 'div.blocks',
-                    itemSelector: 'div.blocks'
-                   });
-                })  
-          </script>
-          <script>
-              $(document).ready(function(){
-              // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-              $('.modal').modal();
-              
-           })
-           
-           $(document).ready(function(){
-            
-            $('#emailForm').on('keyup', function(){
-             var validator = $("#emailForm").validate();
-            if (validator.form() && validateEmail($('#email').val())) {
-              $('#submitButton').prop('disabled', false);
-              $('#submitButton').removeClass('disabled');
-            }
-              else{
-                $('#submitButton').prop('disabled', true);
-                $('#submitButton').addClass('disabled');
-                }
-            }  );
-           })
-           
-           function validateEmail(email) {
-           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-           return re.test(email.toLowerCase());
-           };
-           </script>
+
           
           <script type="javascript" href="assets/app.js"></script>
 
@@ -253,5 +217,10 @@
     
         </body>
       </html>
+
+
+
+
+    
 
 
