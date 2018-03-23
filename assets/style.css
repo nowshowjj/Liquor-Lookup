@@ -44,15 +44,16 @@ html, body{
     color:whitesmoke !important;
     
     text-align: center !important;
-    margin: 10px;
+    
 }
 
 .blocks {
     
     display: inline-block;
     max-width: 300px;
-    padding: 10 px;
-    margin: 10px 5px 5px 15px;
+    margin: 0px;
+   
+    
 }
 img{
     border: 1px solid #ddd;
@@ -70,9 +71,7 @@ img{
     background-color: black !important;
 }
 
-.theme-color {
-    background-color: cyan;
-}
+
 
 .modal {
     max-height: 90%;

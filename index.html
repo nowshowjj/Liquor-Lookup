@@ -8,6 +8,7 @@
           <!--Import materialize.css-->
         <script href="assets/app.js"></script>
         <link rel="stylesheet" href="assets/style.css"/>
+        <link rel="javascript" href="assets/app.js"/>
         <script src='https://code.jquery.com/jquery.js'></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -71,7 +72,7 @@
                               <div class="input-field col s12">
                                 <br>
                                 <input id="email" type="email" class="validate" required="true">
-                                <label for="email" data-error="wrong" data-success="right">your email</label>
+                                <label for="email" data-error="wrong" data-success="right"></label>
                               </div>
                             </div>                     
                             </form>
@@ -91,7 +92,7 @@
                             <div class="card-image">
                               <a href="ocho.html">
                               <img src="https://image.ibb.co/gPKyhx/ocho.jpg">
-                              <span class="card-title" class= "center-align">Ocho Tequila</span>
+                              <span class="card-title" id="text" class= "center-align">Tequila Ocho</span>
                               </a>
                             </div>
                         </div>                      
@@ -161,7 +162,7 @@
                             <div class="card-image">
                             <a href="512.html"> 
                             <img src='https://image.ibb.co/m20X9c/512.jpg'>
-                            <span class="card-title" class= "center-align">512 Tequila</span>
+                            <span class="card-title" class= "center-align">Tequila 512</span>
                             </a>
                             </div>
                         </div> 
@@ -171,7 +172,7 @@
                             <div class="card-image">
                             <a href="altos.html"> 
                             <img src='https://image.ibb.co/frnOFH/Altos.jpg'>
-                            <span class="card-title" class= "center-align">Altos Tequila</span>
+                            <span class="card-title" class= "center-align">Olmeca Altos Tequila</span>
                             </a>
                             </div>
                         </div> 
@@ -208,7 +209,7 @@
                $(window).on('load', function(){
                   $('div.container').masonry({
                     columnWidth: 'div.blocks',
-                    itemSelector: 'div.blocks'
+                    itemSelector: 'div.blocks',
                    });
                 })  
           </script>
@@ -246,6 +247,7 @@
     
         </body>
       </html>
+
 
 
 
