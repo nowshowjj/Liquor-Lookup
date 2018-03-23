@@ -1,0 +1,91 @@
+
+
+html, body{
+    margin: 0px;
+    background-color:black;
+}
+
+.card-panel {
+    padding: 10px 25px 10px 25px;
+    max-width: 1009px;
+    background-color: darkgray !important;
+    margin: auto !important;
+    
+}
+
+.container {
+    padding: 10px 25px 10px 25px;
+    max-width: 1300px;
+    background-color: darkgray;
+    margin: auto;
+    
+}
+
+.nav-wrapper {
+    background-color: #282826;
+      
+}
+
+.brand-logo{
+    color: #00bcd4 !important;
+    padding: 5px;
+    
+}
+
+.brandImage {
+    max-height: 62px;
+    padding: 5px;
+    
+}
+
+.card-title {
+    font-weight:  bold !important;
+    
+    color:whitesmoke !important;
+    
+    text-align: center !important;
+    
+}
+
+.blocks {
+    
+    display: inline-block;
+    max-width: 300px;
+    margin: 0px;
+   
+    
+}
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-width: 270px;
+    background-color: black !important;
+    opacity: .9;
+}
+
+.page-footer{
+    background-color: black !important;
+}
+
+.footer-copyright {
+    background-color: black !important;
+}
+
+
+
+.modal {
+    max-height: 90%;
+    
+    
+  }
+  
+  .modal-form-row {
+    margin-bottom: 0px;
+  }
+
+  
+
+ 
+
+  
+
