@@ -64,16 +64,16 @@ img{
 }
 
 .page-footer{
-    background-color: rgba(16, 19, 17, 0.74) !important;
-    max-width: 955px;
+    background-color: #282826 !important;
+    
     text-align: center; 
 }
 
 .footer-copyright {
-    background-color: black !important;
-    max-width: 955px;
-    margin-left: 15%;
-    background-color: darkgrey;
+    background-color: #282826 !important;
+    
+   
+    
     text-align: center; 
 }
 
