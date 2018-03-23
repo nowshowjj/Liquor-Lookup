@@ -2,7 +2,7 @@
 
 html, body{
     margin: 0px;
-    background-color:black;
+    background-color:rgba(16, 19, 17, 0.74) !important;
 }
 
 .card-panel {
