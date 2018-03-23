@@ -51,7 +51,8 @@ html, body{
     
     display: inline-block;
     max-width: 300px;
-    margin: 0px;
+    padding: 10 px;
+    margin: 10px 5px 5px 15px;
    
     
 }
